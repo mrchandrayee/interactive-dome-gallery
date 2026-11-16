@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#05060d">
+  <title>Interactive Dome Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page">
+    <h1>Interactive Dome Gallery</h1>
+
+    <section class="gallery-shell" aria-label="Interactive three-dimensional image dome">
+      <div class="scene" id="scene">
+        <div class="dome" id="dome" aria-label="Drag to rotate the image dome">
+          <!-- Top latitude -->
+          <figure class="tile" style="--yaw:0deg;--pitch:-48deg;--depth:145px;--image:0"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=420&q=85" alt="Nebula in space"></figure>
+          <figure class="tile" style="--yaw:45deg;--pitch:-48deg;--depth:145px;--image:1"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=420&q=85" alt="Mountain landscape"></figure>
+          <figure class="tile" style="--yaw:90deg;--pitch:-48deg;--depth:145px;--image:2"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=420&q=85" alt="Lake and mountains"></figure>
+          <figure class="tile" style="--yaw:135deg;--pitch:-48deg;--depth:145px;--image:3"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=420&q=85" alt="Sunlit landscape"></figure>
+          <figure class="tile" style="--yaw:180deg;--pitch:-48deg;--depth:145px;--image:4"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=420&q=85" alt="Snowy mountain under stars"></figure>
+          <figure class="tile" style="--yaw:225deg;--pitch:-48deg;--depth:145px;--image:5"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=420&q=85" alt="Mountain peaks"></figure>
+          <figure class="tile" style="--yaw:270deg;--pitch:-48deg;--depth:145px;--image:6"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=420&q=85" alt="Forest canopy"></figure>
+          <figure class="tile" style="--yaw:315deg;--pitch:-48deg;--depth:145px;--image:7"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=420&q=85" alt="Desert landscape"></figure>
+
+          <!-- Middle latitude -->
+          <figure class="tile" style="--yaw:0deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=420&q=85" alt="Coastline"></figure>
+          <figure class="tile" style="--yaw:45deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=420&q=85" alt="Mountain lake"></figure>
+          <figure class="tile" style="--yaw:90deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=420&q=85" alt="Colorful galaxy"></figure>
+          <figure class="tile" style="--yaw:135deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=420&q=85" alt="Night mountain"></figure>
+          <figure class="tile" style="--yaw:180deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=420&q=85" alt="Green forest"></figure>
+          <figure class="tile" style="--yaw:225deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=420&q=85" alt="Golden field"></figure>
+          <figure class="tile" style="--yaw:270deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=420&q=85" alt="Rocky peaks"></figure>
+          <figure class="tile" style="--yaw:315deg;--pitch:0deg;--depth:145px"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=420&q=85" alt="Desert dunes"></figure>
+
+          <!-- Lower latitude -->
+          <figure class="tile" style="--yaw:0deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?w=420&q=85" alt="Starry mountain"></figure>
+          <figure class="tile" style="--yaw:45deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=420&q=85" alt="Forest"></figure>
+          <figure class="tile" style="--yaw:90deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=420&q=85" alt="Open landscape"></figure>
+          <figure class="tile" style="--yaw:135deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?w=420&q=85" alt="Space clouds"></figure>
+          <figure class="tile" style="--yaw:180deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?w=420&q=85" alt="Sunlit grassland"></figure>
+          <figure class="tile" style="--yaw:225deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=420&q=85" alt="Lake"></figure>
+          <figure class="tile" style="--yaw:270deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=420&q=85" alt="Mountain"></figure>
+          <figure class="tile" style="--yaw:315deg;--pitch:48deg;--depth:145px"><img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=420&q=85" alt="Dunes"></figure>
+        </div>
+        <div class="core-glow"></div>
+      </div>
+      <div class="caption">Drag to explore · Scroll to zoom</div>
+    </section>
+    <p class="hint">A rotating 3D dome made from a gallery of image panels.</p>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
